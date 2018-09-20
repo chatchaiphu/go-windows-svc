@@ -18,7 +18,8 @@ import (
 
 var elog debug.Log
 
-type myservice struct{}
+type myservice struct {
+}
 
 func (m *myservice) Execute(args []string, r <-chan svc.ChangeRequest, changes chan<- svc.Status) (ssec bool, errno uint32) {
 	const cmdsAccepted = svc.AcceptStop | svc.AcceptShutdown | svc.AcceptPauseAndContinue

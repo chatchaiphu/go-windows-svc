@@ -1,4 +1,4 @@
-package app
+package fixbcst
 
 import (
 	"golang.org/x/sys/windows/svc/debug"

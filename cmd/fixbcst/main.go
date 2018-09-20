@@ -7,24 +7,22 @@
 package main
 
 import (
-	"github.com/billgraziano/go-windows-svc/app"
+	"fixe_bcst/app/fixbcst"
+
 	"github.com/pkg/errors"
 )
 
 // This is the name you will use for the NET START command
-const svcName = "gosvc"
+const svcName = "FixBcst"
 
 // This is the name that will appear in the Services control panel
-const svcNameLong = "GO Service"
-
-// This is assigned the full SHA1 hash from GIT
-var sha1ver string
+const svcNameLong = "FixBcst Service"
 
 func svcLauncher() error {
 
-	err := app.Run(&elog, svcName, sha1ver)
+	err := fixbcst.Run(elog, svcName)
 	if err != nil {
-		return errors.Wrap(err, "app.run")
+		return errors.Wrap(err, "fixbcst.run")
 	}
 
 	return nil

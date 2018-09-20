@@ -36,10 +36,10 @@ func usage(errmsg string) {
 func main() {
 
 	// You can define svcName here instead and it works fine
-	// const svcName = "myservice"
+	var svcName = "FixBcst"
 
 	// This is the name that will appear in the Services control panel
-	// const svcNameLong = "My Service"
+	var svcNameLong = "FixBcst Service"
 
 	isIntSess, err := svc.IsAnInteractiveSession()
 	if err != nil {

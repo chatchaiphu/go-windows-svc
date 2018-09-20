@@ -1,0 +1,11 @@
+{
+	"EtsConnString": "10.138.23.74:8405",
+	"NatsConnString": "10.138.61.117:4222",
+	"SubjectPublish": "DST.ETS.MD",
+	"LogFileName":"",
+	"LogTimeFlag":true,
+	"LogDebugFlag":true,
+	"LogTraceFlag":true,
+	"LogSysLog":false
+	
+}
